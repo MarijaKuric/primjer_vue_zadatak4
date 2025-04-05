@@ -1,11 +1,9 @@
 <script setup>
 import LinkItem from './LinkItem.vue'
 
-// Primamo prop od roditelja
 const props = defineProps(['activeLink'])
 const emit = defineEmits(['update:activeLink'])
 
-// Lista linkova za navigaciju
 const links = [
   { name: "POČETNA", active: true },
   { name: "SLIKA", active: true },
